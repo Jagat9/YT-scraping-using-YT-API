@@ -15,26 +15,45 @@ channel_ids = ['UCk6hRWc7Y4p9UENKs2rFMpg'#ybp
                'UCCWi3hpnq_Pe03nGxuS7isg'#campusx
               ]
 
-Youtube = build('youtube', 'v3', developerKey = api_key)
+youtube = build('youtube', 'v3', developerKey = api_key)
 
-# function to get channel stats
 
-def get_channel_stats(Youtube, channel_ids):
-    all_data = []
-  
-    request = Youtube.channels().list(
-    part="snippet,contentDetails,statistics",
-    id=','.join(channel_ids))
 
-    response = request.execute()
+def get_channel_stats(youtube, channel_ids):
+  request = youtube.channels().list(part="snippet,contentDetails,statistics",
+                                    id=','.join(channel_ids))
 
-    for i in range(len(response['items'])):
-      
-      data = dict(channel_name = response['items'][i]['snippet']['title'],
-                  subscribers = response['items'][i]['statistics']['subscriberCount'],
-                  views = response['items'][i]['statistics']['viewCount'],
-                  total_video = response['items'][i]['statistics']['videoCount'])
-      all_data.append(data)
-    return response
+  response = request.execute()
+  data = dict(channel_name = response["items "][0]['snippet']['title'])
 
-print(get_channel_stats(Youtube, channel_ids))
+  return response
+  # return response
+
+print(get_channel_stats(youtube, channel_ids))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
