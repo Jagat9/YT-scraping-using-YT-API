@@ -124,6 +124,9 @@ video_detail = get_video_details(youtube, video_ids)
 
 video_data = pd.DataFrame(video_detail)
 print(video_data)
+
+
+video_data.to_csv('Video_Details(E learning bridge).csv')
                                  
 
 
