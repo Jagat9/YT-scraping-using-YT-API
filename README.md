@@ -3,7 +3,7 @@ YouTube is the largest video-sharing platform on the internet, with billions of 
 
 Methodology: To begin, we will use the Google API to access the YouTube API, which will allow us to retrieve data from YouTube channels. We will start by retrieving basic channel information such as channel name, description, and subscriber count. Next, we will retrieve video information, such as video titles, descriptions, view counts, and comments. Additionally, we can retrieve information about comments and interactions on the channel, such as likes and dislikes.
 
-After retrieving the data, we will perform analysis to gain insights into the channel's performance. We can calculate metrics such as engagement rate, views per video, and average watch time. We can also perform sentiment analysis on comments to understand the overall sentiment of the audience towards the channel.
+After retrieving the data, we will perform an analysis to gain insights into the channel's performance. We can calculate metrics such as engagement rate, views per video, and average watch time. We can also perform sentiment analysis on comments to understand the overall sentiment of the audience towards the channel.
 
 Insights: The insights gained from the analysis can be used to inform content creation, audience engagement, and overall channel growth. For example, if the engagement rate is low, it may be an indication that the channel needs to produce more engaging content. Similarly, if the sentiment analysis shows that the audience has negative sentiment towards the channel, the content creator can take steps to improve the content or address the issues raised by the audience.
 
